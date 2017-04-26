@@ -1,3 +1,9 @@
+## Custom options
+# .ptx files
+*.ptx
+
+## Default options
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
