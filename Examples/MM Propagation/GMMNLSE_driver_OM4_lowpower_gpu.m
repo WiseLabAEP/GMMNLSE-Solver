@@ -22,8 +22,6 @@ fiber.betas = betas;
 fiber.SR = SR;
 
 fiber.L0 = 0.15; % Fiber length in m
-db_gain = 0; % total small signal gain in the gain fiber
-fiber.gain_coeff = db_gain*log(10)/(10*0.1); % m^-1
 
 %% Setup simulation parameters
 c = 2.99792458e-4; %speed of ligth m/ps
@@ -41,7 +39,6 @@ sim.save_period = 0; % Length between saves, in m. Alternatively, 0 sets this to
 sim.SK_factor = 1; % Constant factor relating SK to SR, to account for linear or circular polarization 
 sim.check_nan = 1; % 1 = check if the field has NaN values each step, 0 = do not
 sim.verbose = 1; % Whether or not to print out information about the convergence and timing each step
-sim.gain_model = 0;
 
 % If defaults are set (for automation), these can be used instead to
 % override the values here
